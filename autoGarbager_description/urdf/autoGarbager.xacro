@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<robot name="autoGarbager" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find autoGarbager_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find autoGarbager_description)/urdf/autoGarbager.trans" />
+<xacro:include filename="$(find autoGarbager_description)/urdf/autoGarbager.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.010000000000561806 -8.318055197552117e-05 0.07829422189902883" rpy="0 0 0"/>
+    <mass value="1.646559856045247"/>
+    <inertia ixx="0.003359" iyy="0.00337" izz="0.002576" ixy="0.0" iyz="-9.3e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_1">
+  <inertial>
+    <origin xyz="1.734723475976807e-17 0.003999508075688794 0.0" rpy="0 0 0"/>
+    <mass value="0.24168272284066272"/>
+    <inertia ixx="7.5e-05" iyy="0.000148" izz="7.5e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01 -0.042321 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01 -0.042321 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_1">
+  <inertial>
+    <origin xyz="2.6020852139652106e-17 -0.004000032302755106 0.0" rpy="0 0 0"/>
+    <mass value="0.24168272284066264"/>
+    <inertia ixx="7.5e-05" iyy="0.000148" izz="7.5e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01 0.044282 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01 0.044282 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin xyz="2.6020852139652106e-17 2.3788646683997432e-07 -0.0025000000000000022" rpy="0 0 0"/>
+    <mass value="0.015699999999999995"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01 0.000981 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01 0.000981 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component9_1">
+  <inertial>
+    <origin xyz="-7.455193754002387e-10 0.0 -0.014191176470588138" rpy="0 0 0"/>
+    <mass value="0.01746856415089791"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.05 -0.0 -0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.05 -0.0 -0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component10_1">
+  <inertial>
+    <origin xyz="4.465735142789029e-10 0.0 -0.014191176470588145" rpy="0 0 0"/>
+    <mass value="0.017468564150897918"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.03 -0.0 -0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.03 -0.0 -0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://autoGarbager_description/meshes/Component10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="-0.01 0.042321 0.035" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component7_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="-0.01 -0.044282 0.035" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component6_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="-0.01 -0.000981 0.035" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component4_1"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="-0.05 0.0 0.03" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component9_1"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="0.03 0.0 0.03" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component10_1"/>
+</joint>
+
+</robot>
